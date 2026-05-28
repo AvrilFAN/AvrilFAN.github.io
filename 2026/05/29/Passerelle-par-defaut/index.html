@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://avrilfan.github.io/2026/05/29/Passerelle-par-defaut/image.png">
 <meta property="article:published_time" content="2026-05-28T17:18:27.000Z">
-<meta property="article:modified_time" content="2026-05-28T18:54:52.254Z">
+<meta property="article:modified_time" content="2026-05-28T19:09:51.802Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://avrilfan.github.io/2026/05/29/Passerelle-par-defaut/image.png">
@@ -327,7 +327,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          380 字
+          883 字
         
       </span>
     
@@ -338,7 +338,7 @@
         
         
         
-          4 分钟
+          8 分钟
         
       </span>
     
@@ -386,6 +386,11 @@
 <hr>
 <h3 id="Analyse-d’une-topologie"><a href="#Analyse-d’une-topologie" class="headerlink" title="Analyse d’une topologie"></a>Analyse d’une topologie</h3><p>Pour qu’une communication forctionne entre deux sous-réseaux différents, le  trafic doit pouvoir faire l’aller-retour. L’émetteur(发送方) et le récepteur doivent donc tous deux avoir une passerelle configurée.</p>
 <p><img src="/2026/05/29/Passerelle-par-defaut/image.png" srcset="/img/loading.gif" lazyload alt="alt text"></p>
+<hr>
+<h3 id="Checklist-pour-eviter-les-erreurs"><a href="#Checklist-pour-eviter-les-erreurs" class="headerlink" title="Checklist pour éviter les erreurs"></a>Checklist pour éviter les erreurs</h3><p><strong>Quelle adresse choisir ?</strong>: La passerelle configurée sur un PC ou un serveur doit obligatoirement être l’IP de l’interface du routeur située dans le même sous-réseau.</p>
+<p><strong>Configuration bidirectionnelle</strong>: Le client (PC) ET le serveur (Server) doivent avoir une passerelle configurée, sinon le retour des paquets est impossible.</p>
+<p><strong>Isolation des réseaux</strong>: Les deux interfaces du routeur ne doivent jamais être configurées dans le même sous-réseau.</p>
+<p><strong>Activation des ports</strong>: Vérifiez que les interfaces du routeur sont activées avec la commande no shutdown (voyants verts).</p>
 
                 
               </div>
