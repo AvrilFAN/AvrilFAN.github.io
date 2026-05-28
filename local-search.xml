@@ -8,7 +8,7 @@
     <link href="/2026/05/29/Passerelle-par-defaut/"/>
     <url>/2026/05/29/Passerelle-par-defaut/</url>
     
-    <content type="html"><![CDATA[<p>** Passerelle par défaute **<br>** Le concept clé **<br>la passerelle  par défaut( Default Gateway ) : c’est l’adresse IP qui indique à un PC où envoyer ses données losque l’IP de destination n’est pas dans le même sous-réseau que lui. </p><hr><p>Analyse d’une topologie<br>Pour qu’une communication forctionne entre deux sous-réseaux différents, le  trafic doit pouvoir faire l’aller-retour. L’émetteur(发送方) et le récepteur doivent donc tous deux avoir une passerelle configurée.</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Passerelle par défaute</strong><br><strong>Le concept clé</strong><br>la passerelle  par défaut( Default Gateway ) : c’est l’adresse IP qui indique à un PC où envoyer ses données losque l’IP de destination n’est pas dans le même sous-réseau que lui. </p><hr><p>Analyse d’une topologie<br>Pour qu’une communication forctionne entre deux sous-réseaux différents, le  trafic doit pouvoir faire l’aller-retour. L’émetteur(发送方) et le récepteur doivent donc tous deux avoir une passerelle configurée.</p>]]></content>
     
     
     
