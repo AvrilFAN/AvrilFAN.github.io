@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>DHCP &amp; DNS</title>
+    <link href="/2026/05/31/DHCP-DNS/"/>
+    <url>/2026/05/31/DHCP-DNS/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Concept-Cle"><a href="#Concept-Cle" class="headerlink" title="Concept Clé"></a>Concept Clé</h1><h3 id="DHCP"><a href="#DHCP" class="headerlink" title="DHCP"></a>DHCP</h3><p><strong>Dynamic Host Configuration Protocol</strong><br><strong>Rôle principal</strong> : Il est chargé d’attribuer automatiquement les adresses IP, les masques de sous-réseau, les passerelles par défaut et les adresses des serveurs DNS aux équipements du réseau local.</p><h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><p><strong>Domain Name System</strong><br><strong>Rôle principal</strong> : Il est chargé de résoudre les noms de domaine lisibles par l’homme (comme fablab ou google.com) en adresses IP compréhensibles par les ordinateurs (comme 192.168.1.12).</p><h3 id="Cisco-Deploiement-de-Services-Reseau-Integres-en-LAN"><a href="#Cisco-Deploiement-de-Services-Reseau-Integres-en-LAN" class="headerlink" title="Cisco-Déploiement de Services Réseau Intégrés en LAN"></a>Cisco-Déploiement de Services Réseau Intégrés en LAN</h3><p><strong>Objectif de l’expérience</strong><br>L’objectif est de configurer, au sein d’un même réseau local de niveau 2 (LAN), un serveur principal fournissant les services DHCP et DNS. Cela permet à l’ensemble des PC du réseau d’obtenir automatiquement leurs paramètres IP et d’accéder avec succès à un serveur Web indépendant via le nom de domaine fablab.<br><strong>Étapes clés de configuration</strong></p><ol><li>Mise en place de la topologie et attribution des IP de baseConnexion physique : Relier plusieurs PC, un serveur principal (Server0) et un serveur Web (fablab) à un même commutateur (Switch).Fixation des IP statiques des serveurs :<br>Serveur principal (Server0) : 192.168.1.5<br>Serveur Web (fablab) : 192.168.1.12</li><li>Configuration des services (Sur le serveur principal Server0)<br>Service DNS : Activer le service et ajouter un enregistrement A (Nom de domaine : fablab $\rightarrow$ IP : 192.168.1.12).<br>Service DHCP : Activer le service et configurer la plage d’adresses (serverPool) :<br>Champ DNS Server : Saisir l’adresse IP du serveur principal lui-même, soit 192.168.1.5.Champ<br>Start IP Address : Modifier l’adresse de début par 192.168.1.10 (afin de réserver les 9 premières adresses IP pour les serveurs et éviter les conflits d’adresses).</li><li>Activation et tests des clientsActualisation des paramètres : Basculer le mode d’obtention de l’IP de chaque PC de Static à DHCP pour forcer les clients à récupérer de nouveaux paramètres réseau complets incluant l’adresse DNS correcte.Test général : Ouvrir le navigateur de n’importe quel PC et saisir fablab. Le nom de domaine doit se résoudre correctement et afficher la page Web.<br><a href="image.png">DHCP &amp; DNS</a><br><strong>Points de vigilance clés (Essentiel du dépannage)</strong><br>Principe de réservation des adresses : Lors de la planification de la plage DHCP, l’adresse de début de distribution doit impérativement exclure les adresses IP statiques déjà utilisées par les serveurs (passerelle, DNS, serveur Web).<br>Tout conflit d’adresses IP peut paralyser l’ensemble du réseau ou rendre les services indisponibles.Indivisibilité des paramètres réseau : La logique sous-jacente de l’accès par nom de domaine exige la présence simultanée du triplet « IP + Masque de sous-réseau + Serveur DNS ».<br> Lors du dépannage, il ne faut pas seulement vérifier si le PC a obtenu une IP, mais s’assurer que son champ DNS pointe correctement vers le serveur DNS.</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Question d&#39;entetiens</title>
     <link href="/2026/05/29/Question-d-entetiens/"/>
     <url>/2026/05/29/Question-d-entetiens/</url>
