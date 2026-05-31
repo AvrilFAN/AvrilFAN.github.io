@@ -19,16 +19,16 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Concept CléDHCP - Dynamic Host Configuration ProtocolRôle principal : Il est chargé d’attribuer automatiquement les adresses IP, les masques de sous-réseau, les passerelles par défaut et les adresses">
+    <meta name="description" content="Concept CléDHCPDynamic Host Configuration ProtocolRôle principal : Il est chargé d’attribuer automatiquement les adresses IP, les masques de sous-réseau, les passerelles par défaut et les adresses des">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DHCP &amp; DNS">
 <meta property="og:url" content="https://avrilfan.github.io/2026/05/31/DHCP-DNS/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Concept CléDHCP - Dynamic Host Configuration ProtocolRôle principal : Il est chargé d’attribuer automatiquement les adresses IP, les masques de sous-réseau, les passerelles par défaut et les adresses">
+<meta property="og:description" content="Concept CléDHCPDynamic Host Configuration ProtocolRôle principal : Il est chargé d’attribuer automatiquement les adresses IP, les masques de sous-réseau, les passerelles par défaut et les adresses des">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://avrilfan.github.io/2026/05/31/DHCP-DNS/image.png">
 <meta property="article:published_time" content="2026-05-30T18:15:55.000Z">
-<meta property="article:modified_time" content="2026-05-30T19:08:43.937Z">
+<meta property="article:modified_time" content="2026-05-31T17:03:30.363Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://avrilfan.github.io/2026/05/31/DHCP-DNS/image.png">
@@ -382,9 +382,9 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Concept-Cle"><a href="#Concept-Cle" class="headerlink" title="Concept Clé"></a>Concept Clé</h1><h3 id="DHCP-Dynamic-Host-Configuration-Protocol"><a href="#DHCP-Dynamic-Host-Configuration-Protocol" class="headerlink" title="DHCP - Dynamic Host Configuration Protocol"></a>DHCP - Dynamic Host Configuration Protocol</h3><p><strong>Rôle principal</strong> : Il est chargé d’attribuer automatiquement les adresses IP, les masques de sous-réseau, les passerelles par défaut et les adresses des serveurs DNS aux équipements du réseau local.</p>
-<h3 id="DNS-Domain-Name-System"><a href="#DNS-Domain-Name-System" class="headerlink" title="DNS - Domain Name System"></a>DNS - Domain Name System</h3><p><strong>Rôle principal</strong> : Il est chargé de résoudre les noms de domaine lisibles par l’homme (comme fablab ou google.com) en adresses IP compréhensibles par les ordinateurs (comme 192.168.1.12).</p>
-<h3 id="Cisco-Deploiement-de-Services-Reseau-Integres-en-LAN"><a href="#Cisco-Deploiement-de-Services-Reseau-Integres-en-LAN" class="headerlink" title="Cisco-Déploiement de Services Réseau Intégrés en LAN"></a>Cisco-Déploiement de Services Réseau Intégrés en LAN</h3><p><strong>Objectif de l’expérience</strong><br>L’objectif est de configurer, au sein d’un même réseau local de niveau 2 (LAN), un serveur principal fournissant les services DHCP et DNS. Cela permet à l’ensemble des PC du réseau d’obtenir automatiquement leurs paramètres IP et d’accéder avec succès à un serveur Web indépendant via le nom de domaine fablab.<br><strong>Étapes clés de configuration</strong></p>
+                <h1 id="Concept-Cle"><a href="#Concept-Cle" class="headerlink" title="Concept Clé"></a>Concept Clé</h1><h3 id="DHCP"><a href="#DHCP" class="headerlink" title="DHCP"></a>DHCP</h3><p><strong>Dynamic Host Configuration Protocol</strong><br><strong>Rôle principal</strong> : Il est chargé d’attribuer automatiquement les adresses IP, les masques de sous-réseau, les passerelles par défaut et les adresses des serveurs DNS aux équipements du réseau local.</p>
+<h3 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h3><p><strong>Domain Name System</strong><br><strong>Rôle principal</strong> : Il est chargé de résoudre les noms de domaine lisibles par l’homme (comme fablab ou google.com) en adresses IP compréhensibles par les ordinateurs (comme 192.168.1.12).</p>
+<h1 id="Cisco-Deploiement-de-Services-Reseau-Integres-en-LAN"><a href="#Cisco-Deploiement-de-Services-Reseau-Integres-en-LAN" class="headerlink" title="Cisco-Déploiement de Services Réseau Intégrés en LAN"></a>Cisco-Déploiement de Services Réseau Intégrés en LAN</h1><p><strong>Objectif de l’expérience</strong><br>L’objectif est de configurer, au sein d’un même réseau local de niveau 2 (LAN), un serveur principal fournissant les services DHCP et DNS. Cela permet à l’ensemble des PC du réseau d’obtenir automatiquement leurs paramètres IP et d’accéder avec succès à un serveur Web indépendant via le nom de domaine fablab.<br><strong>Étapes clés de configuration</strong></p>
 <ol>
 <li>Mise en place de la topologie et attribution des IP de baseConnexion physique : Relier plusieurs PC, un serveur principal (Server0) et un serveur Web (fablab) à un même commutateur (Switch).Fixation des IP statiques des serveurs :<br>Serveur principal (Server0) : 192.168.1.5<br>Serveur Web (fablab) : 192.168.1.12</li>
 <li>Configuration des services (Sur le serveur principal Server0)<br>Service DNS : Activer le service et ajouter un enregistrement A (Nom de domaine : fablab $\rightarrow$ IP : 192.168.1.12).<br>Service DHCP : Activer le service et configurer la plage d’adresses (serverPool) :<br>Champ DNS Server : Saisir l’adresse IP du serveur principal lui-même, soit 192.168.1.5.Champ<br>Start IP Address : Modifier l’adresse de début par 192.168.1.10 (afin de réserver les 9 premières adresses IP pour les serveurs et éviter les conflits d’adresses).</li>
