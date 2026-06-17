@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>Cisco Three-Tier Network Design Model</title>
+    <link href="/2026/06/17/l3-switch/"/>
+    <url>/2026/06/17/l3-switch/</url>
+    
+    <content type="html"><![CDATA[<p><img src="/2026/06/17/l3-switch/image.png" alt="structure of network with layer core"></p><h2 id="Le-function-de-la-couche-coeur-Core-Layer"><a href="#Le-function-de-la-couche-coeur-Core-Layer" class="headerlink" title="Le function de la couche coeur(Core Layer)"></a>Le function de la couche coeur(Core Layer)</h2><p>La couche coeur assure généralement le chemin de communication le plus rapide du réseau. Comme c’est le backbone du réseau, la couche coeur est principalement associée à une faible latence et une haute fiabilité.</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>TCP/IP et OSI</title>
     <link href="/2026/06/05/TCP-IP-et-OSI/"/>
     <url>/2026/06/05/TCP-IP-et-OSI/</url>
     
-    <content type="html"><![CDATA[<h2 id="L’architecture-reseau"><a href="#L’architecture-reseau" class="headerlink" title="L’architecture réseau"></a>L’architecture réseau</h2><p><img src="/2026/06/05/TCP-IP-et-OSI/image.png" alt="TCP&#x2F;IP et OSI modèle"></p><h2 id="Le-fonctionnement-de-l’encapsulation-des-donnees"><a href="#Le-fonctionnement-de-l’encapsulation-des-donnees" class="headerlink" title="Le fonctionnement de l’encapsulation des données"></a>Le fonctionnement de l’encapsulation des données</h2><p><img src="/2026/06/05/TCP-IP-et-OSI/image1.png" alt="encapsulation"></p><p>Chaque couche ajoute son propre Header pour fournir les informations nécessaires aux équipements concernés, par example, le L4 Header (TCP) contient les ports pour que le système sache à quel processus&#x2F;application livrer la donnée, tandis que l</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="L’architecture-reseau"><a href="#L’architecture-reseau" class="headerlink" title="L’architecture réseau"></a>L’architecture réseau</h2><p><img src="/2026/06/05/TCP-IP-et-OSI/image.png" alt="TCP&#x2F;IP et OSI modèle"></p><h2 id="Le-fonctionnement-de-l’encapsulation-des-donnees"><a href="#Le-fonctionnement-de-l’encapsulation-des-donnees" class="headerlink" title="Le fonctionnement de l’encapsulation des données"></a>Le fonctionnement de l’encapsulation des données</h2><p><img src="/2026/06/05/TCP-IP-et-OSI/image1.png" alt="encapsulation"></p><p>Chaque couche ajoute son propre Header pour fournir les informations nécessaires aux équipements concernés, par example, le L4 Header (TCP) contient les ports pour que le système sache à quel processus&#x2F;application livrer la donnée, tandis que l</p><h2 id="L1"><a href="#L1" class="headerlink" title="L1"></a>L1</h2><h2 id="L2"><a href="#L2" class="headerlink" title="L2"></a>L2</h2><h2 id="L3"><a href="#L3" class="headerlink" title="L3"></a>L3</h2><h2 id="L4"><a href="#L4" class="headerlink" title="L4"></a>L4</h2><h2 id="L5"><a href="#L5" class="headerlink" title="L5"></a>L5</h2><h2 id="L6"><a href="#L6" class="headerlink" title="L6"></a>L6</h2><h2 id="L7"><a href="#L7" class="headerlink" title="L7"></a>L7</h2>]]></content>
     
     
     
