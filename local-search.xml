@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Maquettage Réseau Isolé et Initialisation de l&#39;Infrastructure</title>
+    <link href="/2026/06/24/Isole/"/>
+    <url>/2026/06/24/Isole/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-Topologie-Reseau-Segmentation"><a href="#1-Topologie-Reseau-Segmentation" class="headerlink" title="1.Topologie Réseau &amp; Segmentation"></a>1.Topologie Réseau &amp; Segmentation</h2><p>L’architecture repose sur une segmentation stricte avec un double adressage réseau.<br><strong>Interface 1(WAN&#x2F;NAT)</strong> : Permet aux serveurs d’accéder à Internet de manière managée pour le téléchargement des mises à jour et des paquets requis.<br><strong>Interface 2(LAN&#x2F;Interne)</strong> : Mode « Réseau interne » de VirtualBox, nommé uniformément « intra-parc ». Il simule le réseau interne du cœur de réseau d’une entreprise, sans aucune passerelle externe, et est absolument isolé du monde physique extérieur.</p><h4 id="Inventaire-des-Noeuds"><a href="#Inventaire-des-Noeuds" class="headerlink" title="Inventaire des Nœuds"></a>Inventaire des Nœuds</h4><p>| Hostname | Système (OS) | IP Statique LAN Masque | Rôle Initial |<br>| :win-dc-01: | :Windows Server 2022: | :192.168.10.10: | :ubuntu-client: | :Ubuntu Server 24.04: | :192.168.10.20: |</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Cisco Three-Tier Network Design Model</title>
     <link href="/2026/06/17/l3-switch/"/>
     <url>/2026/06/17/l3-switch/</url>
