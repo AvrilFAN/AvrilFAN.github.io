@@ -28,8 +28,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://avrilfan.github.io/2026/06/24/Isole/enp0s8.png">
 <meta property="og:image" content="https://avrilfan.github.io/2026/06/24/Isole/yaml.png">
-<meta property="og:image" content="https://avrilfan.github.io/ICMP1.png">
-<meta property="og:image" content="https://avrilfan.github.io/ICMP2.png">
+<meta property="og:image" content="https://avrilfan.github.io/2026/06/24/Isole/ICMP1.png">
+<meta property="og:image" content="https://avrilfan.github.io/2026/06/24/Isole/ICMP2.png">
 <meta property="article:published_time" content="2026-06-23T21:29:55.000Z">
 <meta property="article:modified_time" content="2026-06-23T22:12:35.939Z">
 <meta property="article:author" content="John Doe">
@@ -390,8 +390,8 @@
 <h4 id="Configuration-et-Resolution-d’incidents-Troubleshooting"><a href="#Configuration-et-Resolution-d’incidents-Troubleshooting" class="headerlink" title="Configuration et Résolution d’incidents(Troubleshooting)"></a>Configuration et Résolution d’incidents(Troubleshooting)</h4><p><img src="/2026/06/24/Isole/enp0s8.png" srcset="/img/loading.gif" lazyload alt="enp0s8-configuration1"><br>utilise <code>ip a</code> , <code>cd /etc/netplan/</code> et <code>sudo nano 50-cloud-init.yaml</code> pour modifier le fichier de configuration généré par l’installateur a été localisé sous le nom de <strong>50-cloud-init.yaml</strong></p>
 <p><img src="/2026/06/24/Isole/yaml.png" srcset="/img/loading.gif" lazyload alt="fichier 50-cloud-init.yaml "></p>
 <p>A la fin, pour injecter la nouvelle configuration dans le noyau Linux sans redémarrer la machine: <code>sudo netplan apply</code></p>
-<h4 id="Ouverture-du-Pare-feu"><a href="#Ouverture-du-Pare-feu" class="headerlink" title="Ouverture du Pare-feu"></a>Ouverture du Pare-feu</h4><p><img src="/ICMP1.png" srcset="/img/loading.gif" lazyload alt="ICMP-1"><br>Par défaut, Windows Server bloque les requêtees ICMP(ping). Pour permettre le <strong>diagnostic réseau</strong>（网络诊断）, la règle suivante a été activée via la console de sécurité avancée:<br><code>Partage de fichiers et d&#39;imprimantes (Demande d&#39;écho - ICMPv4-Entrée)</code> ➡️ Activée (Enabled)</p>
-<p><img src="/ICMP2.png" srcset="/img/loading.gif" lazyload alt="ICMP-2"></p>
+<h4 id="Ouverture-du-Pare-feu"><a href="#Ouverture-du-Pare-feu" class="headerlink" title="Ouverture du Pare-feu"></a>Ouverture du Pare-feu</h4><p><img src="/2026/06/24/Isole/ICMP1.png" srcset="/img/loading.gif" lazyload alt="ICMP-1"><br>Par défaut, Windows Server bloque les requêtees ICMP(ping). Pour permettre le <strong>diagnostic réseau</strong>（网络诊断）, la règle suivante a été activée via la console de sécurité avancée:<br><code>Partage de fichiers et d&#39;imprimantes (Demande d&#39;écho - ICMPv4-Entrée)</code> ➡️ Activée (Enabled)</p>
+<p><img src="/2026/06/24/Isole/ICMP2.png" srcset="/img/loading.gif" lazyload alt="ICMP-2"></p>
 
                 
               </div>
